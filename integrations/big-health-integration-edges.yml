@@ -1,0 +1,51 @@
+edges:
+- partner_name: FDA digital therapeutics (510(k) / De Novo)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K233872
+  category: FDA-authorized digital therapeutic
+  contract_reference:
+    register: openFDA device/510k (DTx product codes PWE QFT QMY QMZ QQU QRA QVO QWI QXC SAP SBN SCP SEE)
+    standard: FDA 510(k) / De Novo digital therapeutic
+    spec_file: null
+    role: fda-dtx-holder
+    registered_name: Big Health, Inc.
+    matched_domain: bighealth.com
+    matched_by: domain
+    domain_source: wikidata P856
+    detected_by: sweep-digital-therapeutics.py
+    detected: '2026-10-20'
+    identity: wikidata Q140046015 'Big Health' P856 https://www.bighealth.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    register_id: K233872
+    certified_products:
+    - product: FDA digital therapeutic (QVO)
+      product_code: QVO
+      lapsed: false
+      latest_decision: '2024-08-05'
+      devices:
+      - Sleepio®
+    - product: FDA digital therapeutic (SCP)
+      product_code: SCP
+      lapsed: false
+      latest_decision: '2024-08-30'
+      devices:
+      - Daylight
+    signal_note: certified_products = one entry per FDA product code held, never per device; openFDA carries decisions,
+      not withdrawals, so lapsed is always false
+  detected_by: sweep-digital-therapeutics.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+checked:
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
