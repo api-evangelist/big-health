@@ -39,6 +39,33 @@ edges:
       not withdrawals, so lapsed is always false
   detected_by: sweep-digital-therapeutics.py
   first_seen: '2026-10-20'
+- partner_name: Index Ventures
+  partner: index-ventures
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.indexventures.com/companies/big-health/
+  category: vc portfolio participation
+  contract_reference:
+    register: Index Ventures companies (indexventures.com/companies/)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Big Health
+    register_id: https://www.indexventures.com/companies/big-health/
+    register_country: europe, north-america
+    register_website: http://bighealth.com
+    matched_domain: bighealth.com
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    sector: healthcare
+  detected_by: sweep-vc-portfolios.py
+  first_seen: '2026-10-21'
 generated: '2026-10-20'
 method: searched
 source:
@@ -49,3 +76,9 @@ checked:
 - https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
 - https://diga.bfarm.de/de/verzeichnis
 - https://mhealthbelgium.be/apps
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
